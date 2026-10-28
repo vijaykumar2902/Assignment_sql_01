@@ -1,0 +1,16 @@
+create database shopping;
+use shopping;
+
+create table shop(
+shop_id int auto_increment primary key,
+shop_name varchar(40) not null,
+product_name varchar(35) not null,
+price decimal(10,2) default 10.00
+);
+insert into shop (shop_name,product_name,price)
+values
+("supermarket","groceries",1000),
+("D mart","furniture",2000),
+("spencer plaza","Dress",3500);
+
+select * from shop;
